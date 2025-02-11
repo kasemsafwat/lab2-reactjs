@@ -1,0 +1,16 @@
+body{
+  background-color: rgb(24, 29, 75);
+  color: #fcfc;
+}
+
+
+ul li{
+  list-style-type: none;
+  color: #fcfc;
+}
+ul li a{
+  color: rgba(246, 240, 246, 0.8);
+  text-decoration: none;
+}
+
+
