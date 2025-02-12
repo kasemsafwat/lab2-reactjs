@@ -2,9 +2,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 // import styles from "./Home.module.css"
-import { PacmanLoader } from "react-spinners";
 import ProductItem from "../ProductItem/ProductItem";
 import Loader from "../Loader/Loader";
+// import { data } from "react-router-dom";
 
 
 export default function Home() {
@@ -12,9 +12,8 @@ export default function Home() {
 
   const [products,setproducts] = useState([]);
 
-  async function getproducts(){
-    try{
-      
+  function getproducts(){
+/*     try{
     let { data } = await axios.get("https://fakestoreapi.com/products");
     console.log(data);
     setproducts(data);
@@ -22,8 +21,15 @@ export default function Home() {
     }catch(error){
       console.error(error);
       alert("Error fetching products");
-    }
+    } */
 
+      axios.get("https://fakestoreapi.com/products").then(({data}) =>{
+        console.log(data);
+        setproducts(data);
+      }).catch(error =>{
+        console.log(error);
+        alert(error)
+      });
     
   }
 

@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link, NavLink } from 'react-router-dom';
+
+import { NavLink } from 'react-router-dom';
 
 export default function NavBar() {
   return (
@@ -28,18 +28,23 @@ export default function NavBar() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to={"/contact"} className="nav-link" href="#">
+                <NavLink to={"/contact"} className="nav-link">
                   Contact
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to={"/about"} className="nav-link" href="#">
+                <NavLink to={"/about"} className="nav-link">
                   About
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to={"/settings"} className="nav-link" href="#">
+                <NavLink to={"/settings"} className="nav-link">
                   Settings
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to={"/register"} className="nav-link">
+                  register
                 </NavLink>
               </li>
             </ul>

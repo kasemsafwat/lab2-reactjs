@@ -9,6 +9,8 @@ import NotFound from "./components/NotFound/NotFound";
 import Settings from "./components/Settings/Settings";
 import Web from "./components/Web/Web";
 import Mobile from "./components/Mobile/Mobile";
+import Register from "./components/Register/Register";
+import Login from "./components/Login/Login";
 
 function App() {
   const routs = createBrowserRouter([
@@ -19,6 +21,8 @@ function App() {
         { path: "home", element: <Home /> },
         { path: "about", element: <About /> },
         { path: "contact", element: <Contact /> },
+        { path: "register", element: <Register /> },
+        { path: "login", element: <Login /> },
         
         {path: "settings", element: <Settings />, children: [
             { path: "", element: <Web /> },
